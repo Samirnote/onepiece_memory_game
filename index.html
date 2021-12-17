@@ -5,28 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Cards Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="module" src="./test.js"></script>
     <link href="./styles.css" rel="stylesheet">
+
 </head>
 <body>
-    <h1>One Piece Memory Game</h1>
+
+    <h1 style=" 
+        padding: 30px 100px;
+        border: solid #e3a2a2;
+        color: #e2e2ed;
+        margin: 20px 100px;
+        border-radius: 20px;
+        background: #e3a2a2;
+        text-shadow: 2px 2px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+    ">One-Piece Memory Game</h1>
+    
     <section class="main">
        
     </section>
-    <button id="start-btn">START</button>
-    <button id="reset-btn">RESET</button>
-    <p id="win">0</p>
-    <p id="loose">0</p>
+    <button class="btn btn-success" id="start-btn">START</button>
+    <button class="btn btn-danger" id="reset-btn">RESET</button>
+    <p class="bg-success" id="win" style="border: solid #06ee25; border-radius: 10px; background: #86ee86; padding: 20px 20px;" >0</p>
+    <p class="bg-danger" id="loose" style="border: solid #f00707; border-radius: 10px; background: #ee8989; padding: 20px 20px;">0</p>
     
-    <svg id="looseload" style="height:10px; position: absolute; top :450px; left : 150px; 
+    <section class="tresore1"> <img src="./pictures/tresor.png"></section>
+    <section class="tresore2"> <img src="./pictures/tresor.png"></section>
+    <section class="luffy"> <img src="./pictures/luffy.png"></section>
+    <section class="barbenoire"> <img src="./pictures/barbe-noire.png"></section>
+    <section class="logo1"> <img src="./pictures/logo.png"></section>
+    <section class="logo2"> <img src="./pictures/logo.png"></section>
+
+
+    <svg id="looseload" style="height:10px; position: absolute; top :450px; left : 300px; 
     border:solid thick rgb(139, 21, 0); border-radius: 1em; 
     padding-bottom:6px; margin:3px; width:10px; 
     background-color: brown;"></svg> 
 
-    <svg id="winload" style="height:10px; position: absolute; top :450px; right: 150px; 
+    <svg id="winload" style="height:10px; position: absolute; top :450px; right: 300px; 
     border:solid thick rgb(12, 167, 7); border-radius: 1em; 
     padding-bottom:6px; margin:3px;  width:10px; 
     background-color: rgb(145, 204, 7);"></svg> 
+    
     
     
 </body>

@@ -1,5 +1,6 @@
 
 
+
 let main = document.getElementsByClassName("main")[0];
 let all_div = document.getElementsByTagName("div");
 let div;
@@ -29,7 +30,8 @@ let lose = document.getElementById("loose");
 
 
 function clickStart (){
-        
+    
+       
      strBtn.addEventListener('click', cardFunction);
      resBtn.disabled=true;
      resBtn.addEventListener('click', remooveFunction);
@@ -43,6 +45,7 @@ clickStart ();
 rArray.sort(()=>0.5 - Math.random());
 
 function cardFunction() {
+    alert('---------------Welcome to One-piece Memory Game ------------------- you need to help Luffy to get the treasure before Black-Beard--------') 
     strBtn.disabled=true;
     resBtn.disabled=false;
     for (let i = 0; i <= 17; i ++) {
@@ -104,7 +107,7 @@ function cardFunction() {
         m++;
         lose.innerHTML=`${m}`;
         //console.log(Number(looseBar.style.height));
-        looseBar.style.height = `${(m*14)+1}px`;
+        looseBar.style.height = `${(m*29)+1}px`;
         //alert("Sorry");         
         x[0].firstChild.style.opacity = "0";
         x[1].firstChild.style.opacity = "0";
@@ -144,13 +147,13 @@ function endGame (){
   if (Number(looseBar.style.height.slice(0, -2)) > 500){
       //console.log(Number(looseBar.style.height.slice(0, -2)));
     main.innerHTML = '';
-    alert('you loose')
+    alert('----------------you loose-----------------')
   } 
 
   if (Number(winBar.style.height.slice(0, -2)) > 500){
     
     main.innerHTML = '';
-     alert('you win')
+     alert('---------------you win-----------------')
   } 
 
 }

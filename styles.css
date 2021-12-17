@@ -19,19 +19,24 @@ img {
 }
 
 h1{
-    font-size: 6em;
-    font-style: oblique;
-    font-family: 'Trebuchet MS';
+    font-size: 5em;
+    font-style:  oblique;
+    font-family: Copperplate, Papyrus, fantasy;
     text-align: center;
     color : #4b2c14;
+    animation: mymove 0.8s infinite;
+}
 
+@keyframes mymove {
+    from {background-color: rgb(235, 60, 60);}
+    to {background-color: rgb(102, 104, 233);}
 }
   
 
 body{
     margin: 0;
     /*background: url('./pictures/0.jpg') no-repeat;*/
-    background: linear-gradient(to right, #00AAFF, #00ff6c);
+    background: linear-gradient(to right, #3fee56, #ec4c4c);
     font-family: 'Helvetica Neue', Arial, sans-serif;
     box-sizing: border-box;
     padding: 0;
@@ -84,8 +89,72 @@ div {
 }
 
 
+#ship{
+
+    opacity: 1;
+}
+
+.tresore1 img {
+
+    opacity: 1;
+    position: absolute;
+    bottom : 140px;
+    left : 250px;
+    height:120px;
+    width:120px; 
+}
+
+.tresore2 img {
+
+    opacity: 1;
+    position: absolute;
+    bottom : 140px;
+    right : 250px;
+    height:120px;
+    width:120px; 
+}
 
 
+.luffy img {
+
+    opacity: 1;
+    position: absolute;
+    top : 320px;
+    right : 250px;
+    height:120px;
+    width:120px; 
+} 
+
+.barbenoire img {
+
+    opacity: 1;
+    position: absolute;
+    top : 320px;
+    left : 250px;
+    height:120px;
+    width:120px; 
+} 
+
+.logo1 img{
+    
+    opacity: 1;
+    position: absolute;
+    top : 0px;
+    right : 160px;
+    height:220px;
+    width:380px; 
 
 
+}
+
+.logo2 img{
   
+    opacity: 1;
+    position: absolute;
+    top : 0px;
+    left : 160px;
+    height:220px;
+    width:380px; 
+
+
+}
